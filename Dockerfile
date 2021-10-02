@@ -8,12 +8,12 @@ RUN dotnet restore
 
 #Copy the project files and build our release
 COPY . ./
-RUN dotnet publish -c Release -o out
+RUN dotnet publish -c Release -o out -r linux-arm
 
 #Generate runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:5.0
 WORKDIR /app
 EXPOSE 80
 COPY --from=build-env /app/out .
-ENTRYPOINT ["dotnet","Commander.dll"]
+ENTRYPOINT ["dotnet","BE-IoRT.dll"]
 
