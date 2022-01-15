@@ -58,7 +58,7 @@ namespace BE_IoRT.Controllers
             }
             else
             {
-                return Ok(result);
+                return Ok(result.Value);
             }
         }
 
