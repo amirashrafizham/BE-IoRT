@@ -1,5 +1,7 @@
 using System;
+using System.Threading.Tasks;
 using BE_IoRT.Models;
+using BE_IoRT.Services;
 using Iot.Device.SenseHat;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,95 +11,69 @@ namespace BE_IoRT.Controllers
     [Route("[controller]")]
     public class PiSenseHatController : ControllerBase
     {
-        [HttpGet("GetWeather")]
-        public ActionResult<Weather> GetWeather()
-        {
-            var sh = new SenseHat();
-            Weather weather = new Weather();
-            using (sh)
-            {
-                try
-                {
-                    weather.Temperature1 = Math.Round(sh.Temperature.DegreesCelsius, 2);
-                    weather.Temperature2 = Math.Round(sh.Temperature2.DegreesCelsius, 2);
-                    weather.Humidity = Math.Round(sh.Humidity.Percent, 2);
-                    weather.Pressure = Math.Round(sh.Pressure.Bars, 2);
-                    return Ok(weather);
-                }
-                catch (System.Exception)
-                {
+        private readonly IPiSenseHat _piSenseHat;
 
-                    return NotFound("try again");
-                }
+        public PiSenseHatController(IPiSenseHat piSenseHat)
+        {
+            _piSenseHat = piSenseHat;
+        }
+        [HttpGet("GetWeather")]
+        public async Task<ActionResult<Weather>> GetWeather()
+        {
+            var result = await _piSenseHat.GetWeather();
+            if (result == null)
+            {
+                return NotFound("Try again");
             }
+            else
+            {
+                return Ok(result);
+            }
+
         }
 
         [HttpGet("GetAcceleration")]
-        public ActionResult<Acceleration> GetAcceleration()
+        public async Task<ActionResult<Acceleration>> GetAcceleration()
         {
-            var sh = new SenseHat();
-            Acceleration acceleration = new Acceleration();
-            using (sh)
+
+            var result = await _piSenseHat.GetAcceleration();
+            if (result == null)
             {
-                try
-                {
-                    acceleration.X = Math.Round(sh.Acceleration.X, 2);
-                    acceleration.Y = Math.Round(sh.Acceleration.Y, 2);
-                    acceleration.Z = Math.Round(sh.Acceleration.Z, 2);
-
-                    return Ok(acceleration);
-                }
-                catch (System.Exception)
-                {
-
-                    return NotFound("try again");
-                }
+                return NotFound("Try again");
+            }
+            else
+            {
+                return Ok(result);
             }
         }
 
         [HttpGet("GetAngularRate")]
-        public ActionResult<AngularRate> GetAngularRate()
+        public async Task<ActionResult<AngularRate>> GetAngularRate()
         {
-            var sh = new SenseHat();
-            AngularRate angularRate = new AngularRate();
-            using (sh)
+
+            var result = await _piSenseHat.GetAngularRate();
+            if (result == null)
             {
-                try
-                {
-                    angularRate.X = Math.Round(sh.AngularRate.X, 2);
-                    angularRate.Y = Math.Round(sh.AngularRate.Y, 2);
-                    angularRate.Z = Math.Round(sh.AngularRate.Z, 2);
-
-                    return Ok(angularRate);
-                }
-                catch (System.Exception)
-                {
-
-                    return NotFound("try again");
-                }
+                return NotFound("Try again");
+            }
+            else
+            {
+                return Ok(result);
             }
         }
 
         [HttpGet("GetMagneticInduction")]
-        public ActionResult<MagneticInduction> GetMagneticInduction()
+        public async Task<ActionResult<MagneticInduction>> GetMagneticInduction()
         {
-            var sh = new SenseHat();
-            MagneticInduction magneticInduction = new MagneticInduction();
-            using (sh)
+
+            var result = await _piSenseHat.GetMagneticInduction();
+            if (result == null)
             {
-                try
-                {
-                    magneticInduction.X = Math.Round(sh.AngularRate.X, 2);
-                    magneticInduction.Y = Math.Round(sh.AngularRate.Y, 2);
-                    magneticInduction.Z = Math.Round(sh.AngularRate.Z, 2);
-
-                    return Ok(magneticInduction);
-                }
-                catch (System.Exception)
-                {
-
-                    return NotFound("try again");
-                }
+                return NotFound("Try again");
+            }
+            else
+            {
+                return Ok(result);
             }
         }
 
