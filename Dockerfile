@@ -1,5 +1,5 @@
 #Get base SDK Image from Microsoft
-FROM mcr.microsoft.com/dotnet/sdk:5.0 as build
+FROM mcr.microsoft.com/dotnet/sdk:5.0 as build-env
 WORKDIR /app
 
 #Copy the CSPROJ file and restore any dependencies (via NUGET). Subsequently publish
