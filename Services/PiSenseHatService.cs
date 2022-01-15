@@ -21,7 +21,7 @@ namespace BE_IoRT.Services
                         Y = Math.Round(sh.Acceleration.Y, 2),
                         Z = Math.Round(sh.Acceleration.Z, 2)
                     };
-                    await Task.WhenAny();
+                    await Task.Delay(200);
                     return acceleration;
                 }
                 catch (System.Exception)
@@ -44,7 +44,7 @@ namespace BE_IoRT.Services
                     angularRate.Y = Math.Round(sh.AngularRate.Y, 2);
                     angularRate.Z = Math.Round(sh.AngularRate.Z, 2);
 
-                    await Task.WhenAny();
+                    await Task.Delay(200);
                     return angularRate;
                 }
                 catch (System.Exception)
@@ -67,7 +67,7 @@ namespace BE_IoRT.Services
                     magneticInduction.Y = Math.Round(sh.AngularRate.Y, 2);
                     magneticInduction.Z = Math.Round(sh.AngularRate.Z, 2);
 
-                    await Task.WhenAny();
+                    await Task.Delay(200);
                     return magneticInduction;
                 }
                 catch (System.Exception)
@@ -90,7 +90,7 @@ namespace BE_IoRT.Services
                     weather.Temperature2 = Math.Round(sh.Temperature2.DegreesCelsius, 2);
                     weather.Humidity = Math.Round(sh.Humidity.Percent, 2);
                     weather.Pressure = Math.Round(sh.Pressure.Bars, 2);
-                    await Task.WhenAny();
+                    await Task.Delay(200);
                     return weather;
                 }
                 catch (System.Exception)
