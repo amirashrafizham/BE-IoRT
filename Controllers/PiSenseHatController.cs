@@ -41,9 +41,9 @@ namespace BE_IoRT.Controllers
             {
                 try
                 {
-                    acceleration.X = sh.Acceleration.X;
-                    acceleration.Y = sh.Acceleration.Y;
-                    acceleration.Z = sh.Acceleration.Z;
+                    acceleration.X = Math.Round(sh.Acceleration.X, 2);
+                    acceleration.Y = Math.Round(sh.Acceleration.Y, 2);
+                    acceleration.Z = Math.Round(sh.Acceleration.Z, 2);
 
                     return Ok(acceleration);
                 }
@@ -64,9 +64,9 @@ namespace BE_IoRT.Controllers
             {
                 try
                 {
-                    angularRate.X = sh.AngularRate.X;
-                    angularRate.Y = sh.AngularRate.Y;
-                    angularRate.Z = sh.AngularRate.Z;
+                    angularRate.X = Math.Round(sh.AngularRate.X, 2);
+                    angularRate.Y = Math.Round(sh.AngularRate.Y, 2);
+                    angularRate.Z = Math.Round(sh.AngularRate.Z, 2);
 
                     return Ok(angularRate);
                 }
@@ -87,9 +87,9 @@ namespace BE_IoRT.Controllers
             {
                 try
                 {
-                    magneticInduction.X = sh.AngularRate.X;
-                    magneticInduction.Y = sh.AngularRate.Y;
-                    magneticInduction.Z = sh.AngularRate.Z;
+                    magneticInduction.X = Math.Round(sh.AngularRate.X, 2);
+                    magneticInduction.Y = Math.Round(sh.AngularRate.Y, 2);
+                    magneticInduction.Z = Math.Round(sh.AngularRate.Z, 2);
 
                     return Ok(magneticInduction);
                 }
