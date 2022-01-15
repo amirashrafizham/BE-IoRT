@@ -26,7 +26,6 @@ namespace BE_IoRT.Services
                 }
                 catch (System.Exception)
                 {
-
                     return null;
                 }
             }
@@ -35,21 +34,21 @@ namespace BE_IoRT.Services
         public async Task<ActionResult<AngularRate>> GetAngularRate()
         {
             var sh = new SenseHat();
-            AngularRate angularRate = new AngularRate();
             using (sh)
             {
                 try
                 {
-                    angularRate.X = Math.Round(sh.AngularRate.X, 2);
-                    angularRate.Y = Math.Round(sh.AngularRate.Y, 2);
-                    angularRate.Z = Math.Round(sh.AngularRate.Z, 2);
-
+                    AngularRate angularRate = new AngularRate()
+                    {
+                        X = Math.Round(sh.AngularRate.X, 2),
+                        Y = Math.Round(sh.AngularRate.Y, 2),
+                        Z = Math.Round(sh.AngularRate.Z, 2)
+                    };
                     await Task.Delay(200);
                     return angularRate;
                 }
                 catch (System.Exception)
                 {
-
                     return null;
                 }
             }
@@ -58,21 +57,22 @@ namespace BE_IoRT.Services
         public async Task<ActionResult<MagneticInduction>> GetMagneticInduction()
         {
             var sh = new SenseHat();
-            MagneticInduction magneticInduction = new MagneticInduction();
             using (sh)
             {
                 try
                 {
-                    magneticInduction.X = Math.Round(sh.AngularRate.X, 2);
-                    magneticInduction.Y = Math.Round(sh.AngularRate.Y, 2);
-                    magneticInduction.Z = Math.Round(sh.AngularRate.Z, 2);
+                    MagneticInduction magneticInduction = new MagneticInduction()
+                    {
+                        X = Math.Round(sh.AngularRate.X, 2),
+                        Y = Math.Round(sh.AngularRate.Y, 2),
+                        Z = Math.Round(sh.AngularRate.Z, 2)
+                    };
 
                     await Task.Delay(200);
                     return magneticInduction;
                 }
                 catch (System.Exception)
                 {
-
                     return null;
                 }
             }
@@ -81,21 +81,22 @@ namespace BE_IoRT.Services
         public async Task<ActionResult<Weather>> GetWeather()
         {
             var sh = new SenseHat();
-            Weather weather = new Weather();
             using (sh)
             {
                 try
                 {
-                    weather.Temperature1 = Math.Round(sh.Temperature.DegreesCelsius, 2);
-                    weather.Temperature2 = Math.Round(sh.Temperature2.DegreesCelsius, 2);
-                    weather.Humidity = Math.Round(sh.Humidity.Percent, 2);
-                    weather.Pressure = Math.Round(sh.Pressure.Bars, 2);
+                    Weather weather = new Weather()
+                    {
+                        Temperature1 = Math.Round(sh.Temperature.DegreesCelsius, 2),
+                        Temperature2 = Math.Round(sh.Temperature2.DegreesCelsius, 2),
+                        Humidity = Math.Round(sh.Humidity.Percent, 2),
+                        Pressure = Math.Round(sh.Pressure.Bars, 2)
+                    };
                     await Task.Delay(200);
                     return weather;
                 }
                 catch (System.Exception)
                 {
-
                     return null;
                 }
             }
