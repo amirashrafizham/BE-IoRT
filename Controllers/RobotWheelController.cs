@@ -38,7 +38,7 @@ namespace BE_IoRT.Controllers
         public async Task<ActionResult<RobotWheel>> Reverse(int speedInt, int time)
         {
             Speed speed = Speed.FromCentimetersPerSecond(speedInt);
-            var result = await _robotWheel.Forward(speed, time);
+            var result = await _robotWheel.Reverse(speed, time);
             if (result == null)
             {
                 return NotFound("Try again");

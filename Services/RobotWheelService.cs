@@ -13,8 +13,8 @@ namespace BE_IoRT.Services
         public async Task<ActionResult<RobotWheel>> Forward(Speed speed, int time)
         {
             var expansionPlate = PiTop4Board.Instance.GetOrCreateExpansionPlate();
-            using EncoderMotor motorLeft = expansionPlate.GetOrCreateEncoderMotor(EncoderMotorPort.M2);
-            using EncoderMotor motorRight = expansionPlate.GetOrCreateEncoderMotor(EncoderMotorPort.M3);
+            EncoderMotor motorLeft = expansionPlate.GetOrCreateEncoderMotor(EncoderMotorPort.M2);
+            EncoderMotor motorRight = expansionPlate.GetOrCreateEncoderMotor(EncoderMotorPort.M3);
 
             motorRight.ForwardDirection = ForwardDirection.CounterClockwise;
 
@@ -53,8 +53,8 @@ namespace BE_IoRT.Services
         public async Task<ActionResult<RobotWheel>> Reverse(Speed speed, int time)
         {
             var expansionPlate = PiTop4Board.Instance.GetOrCreateExpansionPlate();
-            using EncoderMotor motorLeft = expansionPlate.GetOrCreateEncoderMotor(EncoderMotorPort.M2);
-            using EncoderMotor motorRight = expansionPlate.GetOrCreateEncoderMotor(EncoderMotorPort.M3);
+            EncoderMotor motorLeft = expansionPlate.GetOrCreateEncoderMotor(EncoderMotorPort.M2);
+            EncoderMotor motorRight = expansionPlate.GetOrCreateEncoderMotor(EncoderMotorPort.M3);
 
             motorLeft.ForwardDirection = ForwardDirection.CounterClockwise;
 
