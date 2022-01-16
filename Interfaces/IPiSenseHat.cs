@@ -2,7 +2,7 @@ using System.Threading.Tasks;
 using BE_IoRT.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BE_IoRT.Services
+namespace BE_IoRT.Interfaces
 {
     public interface IPiSenseHat
     {

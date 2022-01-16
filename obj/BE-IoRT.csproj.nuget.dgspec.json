@@ -51,6 +51,14 @@
             "System.Device.Gpio": {
               "target": "Package",
               "version": "[1.5.0, )"
+            },
+            "pi-top": {
+              "target": "Package",
+              "version": "[1.0.439, )"
+            },
+            "pi-top.MakerArchitecture.Expansion": {
+              "target": "Package",
+              "version": "[1.0.439, )"
             }
           },
           "imports": [

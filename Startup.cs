@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BE_IoRT.Interfaces;
 using BE_IoRT.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -30,6 +31,7 @@ namespace BE_IoRT
 
             services.AddControllers();
             services.AddScoped<IPiSenseHat, PiSenseHatService>();
+            services.AddScoped<IRobotWheel, RobotWheelService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BE_IoRT", Version = "v1" });

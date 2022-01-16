@@ -7,6 +7,8 @@
 
   <ItemGroup>
     <PackageReference Include="Iot.Device.Bindings" Version="1.5.0" />
+    <PackageReference Include="pi-top" Version="1.0.439" />
+    <PackageReference Include="pi-top.MakerArchitecture.Expansion" Version="1.0.439" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
     <PackageReference Include="System.Device.Gpio" Version="1.5.0" />
   </ItemGroup>

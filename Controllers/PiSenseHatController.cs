@@ -1,5 +1,6 @@
 using System;
 using System.Threading.Tasks;
+using BE_IoRT.Interfaces;
 using BE_IoRT.Models;
 using BE_IoRT.Services;
 using Iot.Device.SenseHat;
