@@ -33,12 +33,74 @@ namespace BE_IoRT.Controllers
             }
 
         }
+        [HttpGet("TurnRight")]
+        public async Task<ActionResult<RobotWheel>> TurnRight(int speedInt, int time)
+        {
+            Speed speed = Speed.FromCentimetersPerSecond(speedInt);
+            var result = await _robotWheel.TurnRight(speed, time);
+            if (result == null)
+            {
+                return NotFound("Try again");
+            }
+            else
+            {
+                return Ok(result.Value);
+            }
+
+        }
+        [HttpGet("TurnLeft")]
+        public async Task<ActionResult<RobotWheel>> TurnLeft(int speedInt, int time)
+        {
+            Speed speed = Speed.FromCentimetersPerSecond(speedInt);
+            var result = await _robotWheel.TurnLeft(speed, time);
+            if (result == null)
+            {
+                return NotFound("Try again");
+            }
+            else
+            {
+                return Ok(result.Value);
+            }
+
+        }
 
         [HttpGet("Reverse")]
         public async Task<ActionResult<RobotWheel>> Reverse(int speedInt, int time)
         {
             Speed speed = Speed.FromCentimetersPerSecond(speedInt);
             var result = await _robotWheel.Reverse(speed, time);
+            if (result == null)
+            {
+                return NotFound("Try again");
+            }
+            else
+            {
+                return Ok(result.Value);
+            }
+
+        }
+
+        [HttpGet("ReverseRight")]
+        public async Task<ActionResult<RobotWheel>> ReverseRight(int speedInt, int time)
+        {
+            Speed speed = Speed.FromCentimetersPerSecond(speedInt);
+            var result = await _robotWheel.ReverseRight(speed, time);
+            if (result == null)
+            {
+                return NotFound("Try again");
+            }
+            else
+            {
+                return Ok(result.Value);
+            }
+
+        }
+
+        [HttpGet("ReverseLeft")]
+        public async Task<ActionResult<RobotWheel>> ReverseLeft(int speedInt, int time)
+        {
+            Speed speed = Speed.FromCentimetersPerSecond(speedInt);
+            var result = await _robotWheel.ReverseLeft(speed, time);
             if (result == null)
             {
                 return NotFound("Try again");
