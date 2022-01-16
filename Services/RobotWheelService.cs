@@ -32,9 +32,9 @@ namespace BE_IoRT.Services
             {
                 motorLeft.Stop();
             }
-            using (motorLeft)
+            using (motorRight)
             {
-                motorLeft.Stop();
+                motorRight.Stop();
             }
 
             return RobotWheel;
@@ -72,9 +72,9 @@ namespace BE_IoRT.Services
             {
                 motorLeft.Stop();
             }
-            using (motorLeft)
+            using (motorRight)
             {
-                motorLeft.Stop();
+                motorRight.Stop();
             }
 
             return RobotWheel;

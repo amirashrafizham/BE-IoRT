@@ -33,5 +33,21 @@ namespace BE_IoRT.Controllers
             }
 
         }
+
+        [HttpGet("Reverse")]
+        public async Task<ActionResult<RobotWheel>> Reverse(int speedInt, int time)
+        {
+            Speed speed = Speed.FromCentimetersPerSecond(speedInt);
+            var result = await _robotWheel.Forward(speed, time);
+            if (result == null)
+            {
+                return NotFound("Try again");
+            }
+            else
+            {
+                return Ok(result.Value);
+            }
+
+        }
     }
 }
