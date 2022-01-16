@@ -58,7 +58,7 @@ namespace BE_IoRT.Services
 
             motorLeft.ForwardDirection = ForwardDirection.CounterClockwise;
 
-            using var RobotWheel = new RobotWheel()
+            var RobotWheel = new RobotWheel()
             {
                 MotorLeftDirection = motorLeft.ForwardDirection,
                 MotorRightDirection = motorRight.ForwardDirection
