@@ -160,9 +160,9 @@ namespace BE_IoRT.Services
 
             using (motorLeft)
             {
-                motorRight.SetSpeed(speed);
+                motorLeft.SetSpeed(speed);
                 await Task.Delay(time);
-                motorRight.Stop();
+                motorLeft.Stop();
             }
 
             return RobotWheel;
