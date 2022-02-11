@@ -78,6 +78,15 @@ namespace BE_IoRT.Controllers
             }
         }
 
+        [HttpGet("GetContainerID")]
+        public async Task<ActionResult<String>> GetContainerID()
+        {
+
+            var environmentName = Environment.MachineName;
+            return Ok(environmentName);
+
+        }
+
 
     }
 }

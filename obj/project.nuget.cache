@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UFOGuwHopX1Eb3L3pqmeiVcejO+/gtkDq+6+DOP4COrHhq1ty7sGi4y/ZARRroVzQL2b+WmpOnZCBPq+vhH7TA==",
+  "dgSpecHash": "5v7kghUq8o04yZNvRry5/F9Vfat/4bkDjCKafUHWnMK0n6r36e5iHFt9I8axLtu/rdLlCYU0iJ/V5mYX6HWcgg==",
   "success": true,
   "projectFilePath": "C:\\Users\\amirashraf.ahmadizh\\OneDrive - PETRONAS\\Desktop\\BE-IoRT\\BE-IoRT.csproj",
   "expectedPackageFiles": [
@@ -73,7 +73,8 @@
     "C:\\Users\\amirashraf.ahmadizh\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\amirashraf.ahmadizh\\.nuget\\packages\\system.threading.tasks.parallel\\4.3.0\\system.threading.tasks.parallel.4.3.0.nupkg.sha512",
     "C:\\Users\\amirashraf.ahmadizh\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
-    "C:\\Users\\amirashraf.ahmadizh\\.nuget\\packages\\unitsnet\\4.102.0\\unitsnet.4.102.0.nupkg.sha512"
+    "C:\\Users\\amirashraf.ahmadizh\\.nuget\\packages\\unitsnet\\4.102.0\\unitsnet.4.102.0.nupkg.sha512",
+    "C:\\Users\\amirashraf.ahmadizh\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
   ],
   "logs": []
 }
