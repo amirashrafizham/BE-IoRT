@@ -18,7 +18,7 @@ namespace BE_IoRT.Controllers
             _robotWheel = robotWheel;
         }
 
-        [HttpGet("Forward")]
+        [HttpPost("Forward")]
         public async Task<ActionResult<RobotWheel>> Forward(int speedInt, int time)
         {
             Speed speed = Speed.FromCentimetersPerSecond(speedInt);
@@ -33,7 +33,7 @@ namespace BE_IoRT.Controllers
             }
 
         }
-        [HttpGet("TurnRight")]
+        [HttpPost("TurnRight")]
         public async Task<ActionResult<RobotWheel>> TurnRight(int speedInt, int time)
         {
             Speed speed = Speed.FromCentimetersPerSecond(speedInt);
@@ -48,7 +48,7 @@ namespace BE_IoRT.Controllers
             }
 
         }
-        [HttpGet("TurnLeft")]
+        [HttpPost("TurnLeft")]
         public async Task<ActionResult<RobotWheel>> TurnLeft(int speedInt, int time)
         {
             Speed speed = Speed.FromCentimetersPerSecond(speedInt);
@@ -64,7 +64,7 @@ namespace BE_IoRT.Controllers
 
         }
 
-        [HttpGet("Reverse")]
+        [HttpPost("Reverse")]
         public async Task<ActionResult<RobotWheel>> Reverse(int speedInt, int time)
         {
             Speed speed = Speed.FromCentimetersPerSecond(speedInt);
@@ -80,7 +80,7 @@ namespace BE_IoRT.Controllers
 
         }
 
-        [HttpGet("ReverseRight")]
+        [HttpPost("ReverseRight")]
         public async Task<ActionResult<RobotWheel>> ReverseRight(int speedInt, int time)
         {
             Speed speed = Speed.FromCentimetersPerSecond(speedInt);
@@ -96,7 +96,7 @@ namespace BE_IoRT.Controllers
 
         }
 
-        [HttpGet("ReverseLeft")]
+        [HttpPost("ReverseLeft")]
         public async Task<ActionResult<RobotWheel>> ReverseLeft(int speedInt, int time)
         {
             Speed speed = Speed.FromCentimetersPerSecond(speedInt);
