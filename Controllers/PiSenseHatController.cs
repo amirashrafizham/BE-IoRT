@@ -78,12 +78,19 @@ namespace BE_IoRT.Controllers
             }
         }
 
-        [HttpGet("GetContainerID")]
-        public async Task<ActionResult<String>> GetContainerID()
+        [HttpGet("TestWeatherValues")]
+        public async Task<ActionResult> TestWeatherValues()
         {
+            Random rand = new Random();
+            Weather weather = new Weather()
+            {
+                Temperature1 = rand.Next(10, 80),
+                Temperature2 = rand.Next(10, 80),
+                Humidity = rand.Next(10, 80),
+                Pressure = rand.Next(10, 80)
+            };
 
-            var environmentName = Environment.MachineName;
-            return Ok(environmentName);
+            return Ok(weather);
 
         }
 

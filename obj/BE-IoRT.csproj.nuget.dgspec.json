@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\amirashraf.ahmadizh\\OneDrive - PETRONAS\\Desktop\\BE-IoRT\\BE-IoRT.csproj": {}
+    "C:\\Users\\amirashraf.ahmadizh\\OneDrive - PETRONAS\\Desktop\\RoboticsIoT\\BE-IoRT\\BE-IoRT.csproj": {}
   },
   "projects": {
-    "C:\\Users\\amirashraf.ahmadizh\\OneDrive - PETRONAS\\Desktop\\BE-IoRT\\BE-IoRT.csproj": {
+    "C:\\Users\\amirashraf.ahmadizh\\OneDrive - PETRONAS\\Desktop\\RoboticsIoT\\BE-IoRT\\BE-IoRT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amirashraf.ahmadizh\\OneDrive - PETRONAS\\Desktop\\BE-IoRT\\BE-IoRT.csproj",
+        "projectUniqueName": "C:\\Users\\amirashraf.ahmadizh\\OneDrive - PETRONAS\\Desktop\\RoboticsIoT\\BE-IoRT\\BE-IoRT.csproj",
         "projectName": "BE-IoRT",
-        "projectPath": "C:\\Users\\amirashraf.ahmadizh\\OneDrive - PETRONAS\\Desktop\\BE-IoRT\\BE-IoRT.csproj",
+        "projectPath": "C:\\Users\\amirashraf.ahmadizh\\OneDrive - PETRONAS\\Desktop\\RoboticsIoT\\BE-IoRT\\BE-IoRT.csproj",
         "packagesPath": "C:\\Users\\amirashraf.ahmadizh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amirashraf.ahmadizh\\OneDrive - PETRONAS\\Desktop\\BE-IoRT\\obj\\",
+        "outputPath": "C:\\Users\\amirashraf.ahmadizh\\OneDrive - PETRONAS\\Desktop\\RoboticsIoT\\BE-IoRT\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\amirashraf.ahmadizh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -71,12 +71,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.13, 5.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -85,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
