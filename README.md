@@ -1,4 +1,4 @@
-# :robot: Blazor Robotics IoT Dashboard
+# :robot: .NET Robotics IoT API
 
 [![Build status](https://dev.azure.com/amirashrafizham7/IoT%20RaspberryPI/_apis/build/status/Backend%20-%20IoRT%20Raspberry%20Pi)](https://dev.azure.com/amirashrafizham7/IoT%20RaspberryPI/_build/latest?definitionId=4)
 
@@ -9,6 +9,8 @@
 Backend API that allows its user to :
 - Manuever a robot through a web browser
 - Retrieve IoT sensor data and display on the dashboard
+
+![WebAPI](https://user-images.githubusercontent.com/59201954/157067077-fbab5e78-eb9e-436b-bc4c-622c4ec545ae.png)
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
