@@ -64,7 +64,8 @@ The following hardware is required prior to installing the software
 
 
 ## :computer: Code Structure
-![WebAPI](https://user-images.githubusercontent.com/59201954/157067077-fbab5e78-eb9e-436b-bc4c-622c4ec545ae.png)
+
+![CodeStructure](https://user-images.githubusercontent.com/59201954/157164860-2238caa9-8f78-46bb-87c9-271151f7e003.png)
 
 ### Pattern
 
@@ -108,5 +109,7 @@ These are the steps to build and release the code to the RaspberryPi Server
 ## :artificial_satellite: Connectivity
 
 1. Open Swagger documentation at port 5000
+
+![SwaggerScreenshot](https://user-images.githubusercontent.com/59201954/157164825-41b3da22-946e-4c94-9de7-0b5e4365a102.png)
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
