@@ -56,14 +56,13 @@ The following hardware is required prior to installing the software
 
 1. Install Docker engine on the RaspberryPi
 2. Install .NET 5 / .NET 6 on the RaspberryPi
-3. Download the docker image : amirashrafizham/be-iort
-4. Run the following docker command : sudo docker run --privileged -p 5000:80  --name be-iort --detach --restart unless-stopped amirashrafizham/be-iort
+3. Download the docker image : `amirashrafizham/be-iort`
+4. Run the following docker command : `sudo docker run --privileged -p 5000:80  --name be-iort --detach --restart unless-stopped amirashrafizham/be-iort`
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 
 ## Code Structure
-
 ![WebAPI](https://user-images.githubusercontent.com/59201954/157067077-fbab5e78-eb9e-436b-bc4c-622c4ec545ae.png)
 
 ### Pattern
@@ -89,16 +88,17 @@ The project follows the Repository pattern, where C# classes called Services wil
 These are the steps to build and release the code to the RaspberryPi Server
 1. From local machine, push the latest code update to Github
 2. Azure Pipelines will automatically trigger the CI pipeline to build and containerize the code with Dockerfile. The Dockerfile has the following main commands
-    a. Dotnet restore
-    b. Dotnet build
-    c. Dotnet publish
-    d. Generate runtime image
+   - `dotnet restore`
+   - `dotnet build`
+   - `dotnet publish`
+   - Generate runtime image
 3. Push to Dockerhub for backup
 4. Azure Pipelines will then automatically trigger the CD pipeline with the following main commands
-    a. Docker stop old image
-    b. Docker remove old image
-    c. Docker run new image with privileged access, detached mode, restart-unless-stop and point to port 5000
-    d. Remove Docker images on the server with <None> label
+   - `docker stop` old image
+   - `docker remove` old image
+   - `docker run` new image with privileged access, detached mode, restart-unless-stop and point to port 5000
+   - `docker remove` images on the server with <None> label
+</ul>
 
 ![Screenshot 2022-03-07 232948](https://user-images.githubusercontent.com/59201954/157065033-29a79063-0592-4e24-925d-caf14222b8eb.png)
 
