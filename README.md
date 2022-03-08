@@ -19,6 +19,7 @@ This is a .NET Backend API project and has the following features :
    - Ultrasonic sensor integration to detect collision
    - Robot speed sensor integration to monitor the rover's speed
    - Battery status integration to monitor the leftover battery on the RaspberryPi
+   - Camera stream integration 
 
 2. **Weather Station module**
    - Line chart to monitor sensor trends for T-10 seconds 
