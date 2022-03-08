@@ -108,7 +108,7 @@ These are the steps to build and release the code to the RaspberryPi Server
 
 ## :artificial_satellite: Connectivity
 
-1. Open Swagger documentation at port 5000
+Access the IP address of the RaspberryPi at port 5000 to Open Swagger documentation 
 
 ![SwaggerScreenshot](https://user-images.githubusercontent.com/59201954/157164825-41b3da22-946e-4c94-9de7-0b5e4365a102.png)
 
