@@ -15,18 +15,19 @@ This is a .NET Backend API project and has the following features :
 ### Features to be added in future release  
 
 1. **Robot Control Panel module**
-   a. SignalR and BackgroundService to enable real-time IoT sensor monitoring (Temperature, Humidity, Pressure)
-   b. Ultrasonic sensor integration to detect collision 
-   c. Robot speed sensor integration to monitor the rover's speed
-   d. Battery status integration to monitor the leftover battery on the RaspberryPi
+   - SignalR and BackgroundService to enable real-time IoT sensor monitoring (Temperature, Humidity, Pressure)
+   - Ultrasonic sensor integration to detect collision
+   - Robot speed sensor integration to monitor the rover's speed
+   - Battery status integration to monitor the leftover battery on the RaspberryPi
 
 2. **Weather Station module**
-   a. Line chart to monitor sensor trends for T-10 seconds
-   b. MongoDB to store IoT sensor data 
+   - Line chart to monitor sensor trends for T-10 seconds 
+   - MongoDB to store IoT sensor data
 
 3. **DevSecOps**
-   a. Perform Static Code Analysis with SonarCloud
-   b. Perform unit testing with XUnit
+   - Perform Static Code Analysis with SonarCloud
+   - Perform unit testing with XUnit
+   - Integrate unit testing into CI Pipeline and generate code coverage 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
@@ -62,7 +63,7 @@ The following hardware is required prior to installing the software
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 
-## Code Structure
+## :computer: Code Structure
 ![WebAPI](https://user-images.githubusercontent.com/59201954/157067077-fbab5e78-eb9e-436b-bc4c-622c4ec545ae.png)
 
 ### Pattern
