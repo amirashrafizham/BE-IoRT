@@ -99,7 +99,7 @@ These are the steps to build and release the code to the RaspberryPi Server
    - `docker stop` old image
    - `docker remove` old image
    - `docker run` new image with privileged access, detached mode, restart-unless-stop and point to port 5000
-   - `docker remove` images on the server with <None> label
+   - `docker remove` images on the server with <None> label `<none>`
 </ul>
 
 ![Screenshot 2022-03-07 232948](https://user-images.githubusercontent.com/59201954/157065033-29a79063-0592-4e24-925d-caf14222b8eb.png)
@@ -116,3 +116,8 @@ Access the IP address of the RaspberryPi at port 5000 to Open Swagger documentat
 
 
 ## :film_strip: Demo
+
+<h6>Will be updated soon </h6>
+  
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
