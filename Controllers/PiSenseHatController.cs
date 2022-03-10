@@ -28,7 +28,7 @@ namespace BE_IoRT.Controllers
             }
             else
             {
-                return Ok(result.Value);
+                return Ok(result);
             }
 
         }
@@ -44,7 +44,7 @@ namespace BE_IoRT.Controllers
             }
             else
             {
-                return Ok(result.Value);
+                return Ok(result);
             }
         }
 
@@ -59,7 +59,7 @@ namespace BE_IoRT.Controllers
             }
             else
             {
-                return Ok(result.Value);
+                return Ok(result);
             }
         }
 
@@ -74,7 +74,7 @@ namespace BE_IoRT.Controllers
             }
             else
             {
-                return Ok(result.Value);
+                return Ok(result);
             }
         }
 
@@ -89,6 +89,7 @@ namespace BE_IoRT.Controllers
                 Humidity = rand.Next(10, 80),
                 Pressure = rand.Next(10, 80)
             };
+            await Task.Delay(100);
 
             return Ok(weather);
 

@@ -30,7 +30,7 @@ namespace BE_IoRT.Controllers
             }
             else
             {
-                return Ok(result.Value);
+                return Ok(result);
             }
 
         }
@@ -46,7 +46,7 @@ namespace BE_IoRT.Controllers
             }
             else
             {
-                return Ok(result.Value);
+                return Ok(result);
             }
 
         }
@@ -62,7 +62,7 @@ namespace BE_IoRT.Controllers
             }
             else
             {
-                return Ok(result.Value);
+                return Ok(result);
             }
 
         }
@@ -79,7 +79,7 @@ namespace BE_IoRT.Controllers
             }
             else
             {
-                return Ok(result.Value);
+                return Ok(result);
             }
 
         }
@@ -96,7 +96,7 @@ namespace BE_IoRT.Controllers
             }
             else
             {
-                return Ok(result.Value);
+                return Ok(result);
             }
 
         }
@@ -113,7 +113,7 @@ namespace BE_IoRT.Controllers
             }
             else
             {
-                return Ok(result.Value);
+                return Ok(result);
             }
 
         }

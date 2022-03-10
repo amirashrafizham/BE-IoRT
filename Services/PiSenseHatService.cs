@@ -9,7 +9,7 @@ namespace BE_IoRT.Services
 {
     public class PiSenseHatService : IPiSenseHat
     {
-        public async Task<ActionResult<Acceleration>> GetAcceleration()
+        public async Task<Acceleration> GetAcceleration()
         {
             var sh = new SenseHat();
             using (sh)
@@ -32,7 +32,7 @@ namespace BE_IoRT.Services
             }
         }
 
-        public async Task<ActionResult<AngularRate>> GetAngularRate()
+        public async Task<AngularRate> GetAngularRate()
         {
             var sh = new SenseHat();
             using (sh)
@@ -55,7 +55,7 @@ namespace BE_IoRT.Services
             }
         }
 
-        public async Task<ActionResult<MagneticInduction>> GetMagneticInduction()
+        public async Task<MagneticInduction> GetMagneticInduction()
         {
             var sh = new SenseHat();
             using (sh)
@@ -79,7 +79,7 @@ namespace BE_IoRT.Services
             }
         }
 
-        public async Task<ActionResult<Weather>> GetWeather()
+        public async Task<Weather> GetWeather()
         {
             var sh = new SenseHat();
             using (sh)
@@ -91,7 +91,7 @@ namespace BE_IoRT.Services
                         Temperature1 = Math.Round(sh.Temperature.DegreesCelsius, 2),
                         Temperature2 = Math.Round(sh.Temperature2.DegreesCelsius, 2),
                         Humidity = Math.Round(sh.Humidity.Percent, 2),
-                        Pressure = Math.Round(sh.Pressure.Bars, 2)
+                        Pressure = Math.Round(sh.Pressure.Millibars, 2)
                     };
                     await Task.Delay(200);
                     return weather;

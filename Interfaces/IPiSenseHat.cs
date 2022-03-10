@@ -6,9 +6,9 @@ namespace BE_IoRT.Interfaces
 {
     public interface IPiSenseHat
     {
-        public Task<ActionResult<Weather>> GetWeather();
-        public Task<ActionResult<Acceleration>> GetAcceleration();
-        public Task<ActionResult<AngularRate>> GetAngularRate();
-        public Task<ActionResult<MagneticInduction>> GetMagneticInduction();
+        public Task<Weather> GetWeather();
+        public Task<Acceleration> GetAcceleration();
+        public Task<AngularRate> GetAngularRate();
+        public Task<MagneticInduction> GetMagneticInduction();
     }
 }

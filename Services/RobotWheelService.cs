@@ -10,7 +10,7 @@ namespace BE_IoRT.Services
 {
     public class RobotWheelService : IRobotWheel
     {
-        public async Task<ActionResult<RobotWheel>> Forward(Speed speed, int time)
+        public async Task<RobotWheel> Forward(Speed speed, int time)
         {
             var expansionPlate = PiTop4Board.Instance.GetOrCreateExpansionPlate();
             EncoderMotor motorLeft = expansionPlate.GetOrCreateEncoderMotor(EncoderMotorPort.M2);
@@ -40,7 +40,7 @@ namespace BE_IoRT.Services
             return RobotWheel;
         }
 
-        public async Task<ActionResult<RobotWheel>> TurnRight(Speed speed, int time)
+        public async Task<RobotWheel> TurnRight(Speed speed, int time)
         {
             EncoderMotor motorLeft;
             EncoderMotor motorRight;
@@ -64,7 +64,7 @@ namespace BE_IoRT.Services
             return RobotWheel;
         }
 
-        public async Task<ActionResult<RobotWheel>> TurnLeft(Speed speed, int time)
+        public async Task<RobotWheel> TurnLeft(Speed speed, int time)
         {
             EncoderMotor motorLeft;
             EncoderMotor motorRight;
@@ -89,7 +89,7 @@ namespace BE_IoRT.Services
             return RobotWheel;
         }
 
-        public async Task<ActionResult<RobotWheel>> Reverse(Speed speed, int time)
+        public async Task<RobotWheel> Reverse(Speed speed, int time)
         {
             var expansionPlate = PiTop4Board.Instance.GetOrCreateExpansionPlate();
             EncoderMotor motorLeft = expansionPlate.GetOrCreateEncoderMotor(EncoderMotorPort.M2);
@@ -119,7 +119,7 @@ namespace BE_IoRT.Services
             return RobotWheel;
         }
 
-        public async Task<ActionResult<RobotWheel>> ReverseRight(Speed speed, int time)
+        public async Task<RobotWheel> ReverseRight(Speed speed, int time)
         {
             EncoderMotor motorLeft;
             EncoderMotor motorRight;
@@ -143,7 +143,7 @@ namespace BE_IoRT.Services
             return RobotWheel;
         }
 
-        public async Task<ActionResult<RobotWheel>> ReverseLeft(Speed speed, int time)
+        public async Task<RobotWheel> ReverseLeft(Speed speed, int time)
         {
             EncoderMotor motorLeft;
             EncoderMotor motorRight;
