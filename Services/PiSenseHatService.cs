@@ -91,7 +91,7 @@ namespace BE_IoRT.Services
                         Temperature1 = Math.Round(sh.Temperature.DegreesCelsius, 2),
                         Temperature2 = Math.Round(sh.Temperature2.DegreesCelsius, 2),
                         Humidity = Math.Round(sh.Humidity.Percent, 2),
-                        Pressure = Math.Round(sh.Pressure.Millibars, 2)
+                        Pressure = Math.Round(sh.Pressure.Atmospheres, 2)
                     };
                     await Task.Delay(200);
                     return weather;
