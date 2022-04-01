@@ -32,6 +32,14 @@ This is a .NET Backend API project and has the following features :
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
+## :film_strip: Demo
+
+<h6>Controlling the rover from a mobile device</h6>
+   
+![1_0_GIF_1](https://user-images.githubusercontent.com/59201954/158006331-2770bfc3-a9bc-4d32-8133-aac5ad348dfb.GIF)
+  
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
 ## :hammer_and_wrench: Tech Stack
 
 | Technology          | Remarks                                                                                          |
@@ -113,13 +121,3 @@ To access the Swagger API, simply point the IP address of the RaspberryPi with p
 ![SwaggerScreenshot](https://user-images.githubusercontent.com/59201954/157164825-41b3da22-946e-4c94-9de7-0b5e4365a102.png)
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-
-## :film_strip: Demo
-
-<h6>Controlling the rover from a mobile device</h6>
-   
-![1_0_GIF_1](https://user-images.githubusercontent.com/59201954/158006331-2770bfc3-a9bc-4d32-8133-aac5ad348dfb.GIF)
-  
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
