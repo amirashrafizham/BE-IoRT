@@ -1,16 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>BE_IoRT</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Iot.Device.Bindings" Version="1.5.0" />
-    <PackageReference Include="pi-top" Version="1.0.439" />
+    <PackageReference Include="pi-top" Version="1.0.447" />
     <PackageReference Include="pi-top.MakerArchitecture.Expansion" Version="1.0.439" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
-    <PackageReference Include="System.Device.Gpio" Version="1.5.0" />
+    <PackageReference Include="pi-top.MakerArchitecture.ExpansionKit" Version="1.0.382" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
+    <PackageReference Include="System.Device.Gpio" Version="2.1.0" />
   </ItemGroup>
 
 </Project>

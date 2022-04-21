@@ -1,32 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\amirashraf.ahmadizh\\OneDrive - PETRONAS\\Desktop\\RoboticsIoT\\BE-IoRT\\BE-IoRT.csproj": {}
+    "/Users/amirashrafizham/Desktop/DotnetApps/WebAPIs/BE-IoRT/BE-IoRT.csproj": {}
   },
   "projects": {
-    "C:\\Users\\amirashraf.ahmadizh\\OneDrive - PETRONAS\\Desktop\\RoboticsIoT\\BE-IoRT\\BE-IoRT.csproj": {
+    "/Users/amirashrafizham/Desktop/DotnetApps/WebAPIs/BE-IoRT/BE-IoRT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amirashraf.ahmadizh\\OneDrive - PETRONAS\\Desktop\\RoboticsIoT\\BE-IoRT\\BE-IoRT.csproj",
+        "projectUniqueName": "/Users/amirashrafizham/Desktop/DotnetApps/WebAPIs/BE-IoRT/BE-IoRT.csproj",
         "projectName": "BE-IoRT",
-        "projectPath": "C:\\Users\\amirashraf.ahmadizh\\OneDrive - PETRONAS\\Desktop\\RoboticsIoT\\BE-IoRT\\BE-IoRT.csproj",
-        "packagesPath": "C:\\Users\\amirashraf.ahmadizh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amirashraf.ahmadizh\\OneDrive - PETRONAS\\Desktop\\RoboticsIoT\\BE-IoRT\\obj\\",
+        "projectPath": "/Users/amirashrafizham/Desktop/DotnetApps/WebAPIs/BE-IoRT/BE-IoRT.csproj",
+        "packagesPath": "/Users/amirashrafizham/.nuget/packages/",
+        "outputPath": "/Users/amirashrafizham/Desktop/DotnetApps/WebAPIs/BE-IoRT/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\amirashraf.ahmadizh\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/amirashrafizham/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -37,8 +35,8 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Iot.Device.Bindings": {
               "target": "Package",
@@ -46,19 +44,23 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[5.6.3, )"
+              "version": "[6.3.0, )"
             },
             "System.Device.Gpio": {
               "target": "Package",
-              "version": "[1.5.0, )"
+              "version": "[2.1.0, )"
             },
             "pi-top": {
               "target": "Package",
-              "version": "[1.0.439, )"
+              "version": "[1.0.447, )"
             },
             "pi-top.MakerArchitecture.Expansion": {
               "target": "Package",
               "version": "[1.0.439, )"
+            },
+            "pi-top.MakerArchitecture.ExpansionKit": {
+              "target": "Package",
+              "version": "[1.0.382, )"
             }
           },
           "imports": [
@@ -79,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.202/RuntimeIdentifierGraph.json"
         }
       }
     }
