@@ -27,7 +27,7 @@ This is a .NET Backend API project and has the following features :
    - MongoDB to store IoT sensor data
 
 3. **DevSecOps**
-   - Perform Static Code Analysis with SonarCloud
+   - Perform Static Code Analysis with SonarCloud :white_check_mark:
    - Perform unit testing with XUnit
    - Integrate unit testing into CI Pipeline and generate code coverage 
 
