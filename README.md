@@ -1,11 +1,10 @@
 # :space_invader: .NET Robotics IoT API
 
 [![Build status](https://dev.azure.com/amirashrafizham7/IoT%20RaspberryPI/_apis/build/status/Backend%20-%20IoRT%20Raspberry%20Pi)](https://dev.azure.com/amirashrafizham7/IoT%20RaspberryPI/_build/latest?definitionId=4)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=amirashrafizham_BE-IoRT&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=amirashrafizham_BE-IoRT)
 
 ![Azure DevOps builds](https://img.shields.io/azure-devops/build/amirashrafizham7/3cd2d062-7beb-450b-835a-acb34a7cc906/4)
 ![Azure DevOps releases](https://img.shields.io/azure-devops/release/amirashrafizham7/3cd2d062-7beb-450b-835a-acb34a7cc906/4/4)
-
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=amirashrafizham_FE-IoRT)](https://sonarcloud.io/summary/new_code?id=amirashrafizham_FE-IoRT)
 
 ## :thought_balloon: About
 This is a .NET Backend API project and has the following features :
