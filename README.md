@@ -8,7 +8,7 @@
 
 ## :thought_balloon: About
 This is a .NET Backend API project and has the following features :
-- Remotely manoeuvre a robot through a web browser [Feb 2022 Release]
+- Remotely maneuvre a robot through a web browser [Feb 2022 Release]
 - Retrieve and monitor IoT sensor data displayed on the dashboard [Feb 2022 Release]
 - Camera video streaming in real-time [Apr 2022 Release]
 
