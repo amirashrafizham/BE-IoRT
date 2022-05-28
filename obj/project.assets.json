@@ -2212,32 +2212,25 @@
     ]
   },
   "packageFolders": {
-    "/home/pi/.nuget/packages/": {}
+    "/Users/amirashrafizham/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/pi/Desktop/BE-IoRT/BE-IoRT.csproj",
+      "projectUniqueName": "/Users/amirashrafizham/Desktop/DotnetApps/WebAPIs/BE-IoRT/BE-IoRT.csproj",
       "projectName": "BE-IoRT",
-      "projectPath": "/home/pi/Desktop/BE-IoRT/BE-IoRT.csproj",
-      "packagesPath": "/home/pi/.nuget/packages/",
-      "outputPath": "/home/pi/Desktop/BE-IoRT/obj/",
+      "projectPath": "/Users/amirashrafizham/Desktop/DotnetApps/WebAPIs/BE-IoRT/BE-IoRT.csproj",
+      "packagesPath": "/Users/amirashrafizham/.nuget/packages/",
+      "outputPath": "/Users/amirashrafizham/Desktop/DotnetApps/WebAPIs/BE-IoRT/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/pi/.nuget/NuGet/NuGet.Config"
+        "/Users/amirashrafizham/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "/home/pi/localNuget": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://pkgs.dev.azure.com/dnceng/public/_packaging/MachineLearning/nuget/v3/index.json": {},
-        "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json": {},
-        "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json": {},
-        "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1/nuget/v3/index.json": {},
-        "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5/nuget/v3/index.json": {},
-        "https://www.powershellgallery.com/api/v2/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
@@ -2298,7 +2291,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/pi/.dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.203/RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -7,6 +7,6 @@ namespace BE_IoRT.Interfaces
 {
     public interface IRobotUltrasonic
     {
-        public Task<RobotWheel> Sense();
+        public Task<RobotUltraSonic> Sense();
     }
 }
