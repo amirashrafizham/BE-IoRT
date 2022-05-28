@@ -1,26 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "/Users/amirashrafizham/Desktop/DotnetApps/WebAPIs/BE-IoRT/BE-IoRT.csproj": {}
+    "/home/pi/Desktop/BE-IoRT/BE-IoRT.csproj": {}
   },
   "projects": {
-    "/Users/amirashrafizham/Desktop/DotnetApps/WebAPIs/BE-IoRT/BE-IoRT.csproj": {
+    "/home/pi/Desktop/BE-IoRT/BE-IoRT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/amirashrafizham/Desktop/DotnetApps/WebAPIs/BE-IoRT/BE-IoRT.csproj",
+        "projectUniqueName": "/home/pi/Desktop/BE-IoRT/BE-IoRT.csproj",
         "projectName": "BE-IoRT",
-        "projectPath": "/Users/amirashrafizham/Desktop/DotnetApps/WebAPIs/BE-IoRT/BE-IoRT.csproj",
-        "packagesPath": "/Users/amirashrafizham/.nuget/packages/",
-        "outputPath": "/Users/amirashrafizham/Desktop/DotnetApps/WebAPIs/BE-IoRT/obj/",
+        "projectPath": "/home/pi/Desktop/BE-IoRT/BE-IoRT.csproj",
+        "packagesPath": "/home/pi/.nuget/packages/",
+        "outputPath": "/home/pi/Desktop/BE-IoRT/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/amirashrafizham/.nuget/NuGet/NuGet.Config"
+          "/home/pi/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "/home/pi/localNuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/MachineLearning/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet3.1/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5/nuget/v3/index.json": {},
+          "https://www.powershellgallery.com/api/v2/": {}
         },
         "frameworks": {
           "net6.0": {
@@ -81,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/pi/.dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
         }
       }
     }
