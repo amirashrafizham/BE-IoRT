@@ -6,22 +6,21 @@ using UnitsNet;
 
 namespace BE_IoRT.Controllers
 {
+
     [ApiController]
     [Route("[controller]")]
     public class RobotHeadController : ControllerBase
     {
-
         private readonly IRobotHead _robotHead;
+
         public RobotHeadController(IRobotHead robotHead)
         {
-            this._robotHead = robotHead;
-
+            _robotHead = robotHead;
         }
 
         [HttpPost("Head")]
-        public async Task<ActionResult<RobotHead>> MoveServoMotor(RobotHead client)
+        public async Task<ActionResult> Forward(RobotHead client)
         {
-
             var result = await _robotHead.MoveServoMotor(client);
             if (result == null)
             {
@@ -31,8 +30,7 @@ namespace BE_IoRT.Controllers
             {
                 return Ok(result);
             }
+
         }
-
-
     }
 }
