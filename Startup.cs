@@ -41,6 +41,7 @@ namespace BE_IoRT
             });
             services.AddControllers();
             services.AddScoped<IPiSenseHat, PiSenseHatService>();
+            services.AddScoped<IRobot, RobotService>();
             services.AddScoped<IRobotWheel, RobotWheelService>();
             services.AddScoped<IRobotUltrasonic, RobotUltrasonicService>();
             services.AddScoped<IRobotHead, RobotHeadService>();
