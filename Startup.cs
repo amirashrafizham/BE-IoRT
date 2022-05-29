@@ -44,6 +44,7 @@ namespace BE_IoRT
             services.AddScoped<IRobotWheel, RobotWheelService>();
             services.AddScoped<IRobotUltrasonic, RobotUltrasonicService>();
             services.AddScoped<IRobotHead, RobotHeadService>();
+            services.AddScoped<IRobotBattery, RobotBatteryService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BE_IoRT", Version = "v1" });

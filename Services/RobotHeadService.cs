@@ -16,15 +16,15 @@ namespace BE_IoRT.Services
         {
             RobotHead robotHead = new RobotHead()
             {
-                angleHorizontal = client.angleHorizontal,
-                angleVertical = client.angleVertical
+                AngleHorizontal = client.AngleHorizontal,
+                AngleVertical = client.AngleVertical
             };
 
             ServoMotor mtrHorizontal;
             ServoMotor mtrVertical;
 
-            Angle setAngleHorizontal = Angle.FromDegrees(client.angleHorizontal);
-            Angle setAngleVertical = Angle.FromDegrees(client.angleVertical);
+            Angle setAngleHorizontal = Angle.FromDegrees(client.AngleHorizontal);
+            Angle setAngleVertical = Angle.FromDegrees(client.AngleVertical);
 
             var expansionPlate = PiTop4Board.Instance.GetOrCreateExpansionPlate();
             mtrHorizontal = expansionPlate.GetOrCreateServoMotor(ServoMotorPort.S1); //Port M1 Default Forward
@@ -40,6 +40,7 @@ namespace BE_IoRT.Services
                 mtrVertical.GoToAngle(setAngleVertical);
             }
 
+            await Task.Delay(200);
             return robotHead;
         }
     }

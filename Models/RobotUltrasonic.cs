@@ -4,6 +4,6 @@ namespace BE_IoRT.Models
 {
     public class RobotUltraSonic
     {
-        public double length { get; set; }
+        public double Length { get; set; }
     }
 }

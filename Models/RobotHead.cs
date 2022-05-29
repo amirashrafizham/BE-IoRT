@@ -2,7 +2,7 @@ namespace BE_IoRT.Models
 {
     public class RobotHead
     {
-        public int angleHorizontal { get; set; }
-        public int angleVertical { get; set; }
+        public int AngleHorizontal { get; set; }
+        public int AngleVertical { get; set; }
     }
 }
