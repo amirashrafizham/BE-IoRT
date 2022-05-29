@@ -19,8 +19,9 @@ namespace BE_IoRT.Services
             RobotUltraSonic robotUltraSonic = new RobotUltraSonic();
             var expansionPlate = PiTop4Board.Instance.GetOrCreateExpansionPlate();
             frontUltraSound = expansionPlate.GetOrCreateUltrasonicSensor(DigitalPort.D3);
-            robotUltraSonic.length = frontUltraSound.Distance.Centimeters;
+            robotUltraSonic.Length = frontUltraSound.Distance.Centimeters;
 
+            await Task.Delay(200);
             return robotUltraSonic;
         }
     }
