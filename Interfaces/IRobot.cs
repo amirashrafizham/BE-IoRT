@@ -1,12 +1,14 @@
 using System.Threading.Tasks;
 using BE_IoRT.Models;
-using Microsoft.AspNetCore.Mvc;
 using UnitsNet;
 
 namespace BE_IoRT.Interfaces
 {
-    public interface IRobotWheel
+    public interface IRobot
     {
+        public Task<RobotBattery> GetBattery();
+        public Task<RobotHead> MoveServoMotor(RobotHead client);
+        public Task<RobotUltraSonic> Sense();
         public Task<RobotWheel> Forward(Speed speed, int time);
         public Task<RobotWheel> TurnRight(Speed speed, int time);
         public Task<RobotWheel> TurnLeft(Speed speed, int time);
