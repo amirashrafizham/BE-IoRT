@@ -12,8 +12,7 @@ namespace BE_IoRT.Services
         public async Task<string> DroneCommand(string command)
         {
             UdpClient udpClient = new UdpClient("192.168.10.1", 8889);
-            udpClient.Client.SendTimeout = 15000;
-            udpClient.Client.ReceiveTimeout = 15000;
+            udpClient.Client.ReceiveTimeout = 2000;
             try
             {
                 // Sends a message to the host to which you have conected.
