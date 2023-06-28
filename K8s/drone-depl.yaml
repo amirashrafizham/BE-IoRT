@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: roverservice-depl
+  name:  droneservice-depl
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: roverservice
+      app: droneservice 
   template:
     metadata:
       labels:
-        app: roverservice
+        app: droneservice 
     spec:
       containers:
-        - name: roverservice
+        - name: droneservice 
           image: amirashrafizham/be-iort
           securityContext:
             privileged: true
@@ -21,13 +21,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: roverservice-clusterip-srv
+  name:  droneservice-clusterip-srv
 spec:
   type: ClusterIP
   selector:
-    app: roverservice
+    app: droneservice 
   ports:
-  - name: roverservice
+  - name: droneservice 
     protocol: TCP
     port: 80
     targetPort: 80

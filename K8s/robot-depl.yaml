@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: robotservice-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: robotservice
+  template:
+    metadata:
+      labels:
+        app: robotservice
+    spec:
+      containers:
+        - name: robotservice
+          image: amirashrafizham/be-iort
+          securityContext:
+            privileged: true
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: robotservice-clusterip-srv
+spec:
+  type: ClusterIP
+  selector:
+    app: robotservice
+  ports:
+  - name: robotservice
+    protocol: TCP
+    port: 80
+    targetPort: 80

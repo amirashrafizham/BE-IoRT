@@ -10,6 +10,13 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: roverservice-clusterip-srv
+                name: robotservice-clusterip-srv
+                port:
+                  number: 80
+          - path: /Drone
+            pathType: Prefix
+            backend:
+              service:
+                name: droneservice-clusterip-srv
                 port:
                   number: 80
