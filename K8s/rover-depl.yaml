@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: roverservice-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: roverservice
+  template:
+    metadata:
+      labels:
+        app: roverservice
+    spec:
+      containers:
+        - name: roverservice
+          image: amirashrafizham/be-iort
+          securityContext:
+            privileged: true
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: roverservice-clusterip-srv
+spec:
+  type: ClusterIP
+  selector:
+    app: roverservice
+  ports:
+  - name: roverservice
+    protocol: TCP
+    port: 80
+    targetPort: 80

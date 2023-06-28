@@ -1,0 +1,15 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: traefik-ingress-srv
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /Robot
+            pathType: Prefix
+            backend:
+              service:
+                name: roverservice-clusterip-srv
+                port:
+                  number: 80
